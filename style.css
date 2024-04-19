@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* * * * {
+  outline: 3px solid red;
+} */
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+  --bright-red: hsl(12, 88%, 59%);
+  --dark-blue: hsl(228, 39%, 23%);
+  --dark-grayish-blue: hsl(227, 12%, 61%);
+  --very-dark-blue: hsl(233, 12%, 13%);
+  --very-pale-red: hsl(13, 100%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+.navbar {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10rem;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.ll {
+  margin-left: 2rem;
+  color: var(--dark-blue);
+}
+
+.ll:first-child {
+  margin-left: 0;
+}
+
+.btn {
+  background-color: var(--bright-red);
+  padding: 1.25rem 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.312);
+  color: var(--very-light-gray);
+}
+
+.page1 {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 10rem;
+  gap: 2rem;
+}
+
+.left-section {
+  max-width: 50rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.title {
+  font-size: 4.8rem;
+  color: var(--very-dark-blue);
+  text-align: start;
+}
+
+.about {
+  font-size: 1.6rem;
+  color: var(--dark-grayish-blue);
+  text-align: start;
+  max-width: 35rem;
+  line-height: 1.4;
+}
+
+.right-section {
+  height: 100%; /* Set the height */
+  align-self: end;
+}
+
+.imagg {
+  width: 100%;
+}
+
+.page2 {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 10rem;
+}
+
+.left-section2 {
+  align-self: start;
+  justify-self: start;
+}
+
+.title2 {
+  font-size: 3.8rem;
+  color: var(--very-dark-blue);
+  text-align: start;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.right-section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-self: end;
+}
+
+.three-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ttle {
+  position: relative;
+  font-size: 1.6rem;
+  color: var(--very-dark-blue);
+  padding-left: 5rem;
+}
+
+.ttle:before {
+  content: "01";
+  position: absolute;
+  left: -20px; /* Başlık ile kutu arasındaki mesafe */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 30px;
+  background-color: var(--bright-red);
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 40%;
+  margin-right: 20px;
+}
+.ttle2 {
+  position: relative;
+  font-size: 1.6rem;
+  color: var(--very-dark-blue);
+  padding-left: 5rem;
+}
+
+.ttle2:before {
+  content: "02";
+  position: absolute;
+  left: -20px; /* Başlık ile kutu arasındaki mesafe */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 30px;
+  background-color: var(--bright-red);
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 40%;
+  margin-right: 20px;
+}
+.ttle3 {
+  position: relative;
+  font-size: 1.6rem;
+  color: var(--very-dark-blue);
+  padding-left: 5rem;
+}
+
+.ttle3:before {
+  content: "03";
+  position: absolute;
+  left: -20px; /* Başlık ile kutu arasındaki mesafe */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 30px;
+  background-color: var(--bright-red);
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 40%;
+  margin-right: 20px;
+}
+
+.number {
+  background-color: var(--bright-red);
+  padding: 0.7rem 1.4rem;
+  border-radius: 1rem;
+}
+
+.aboutt {
+  font-size: 1.6rem;
+  color: var(--dark-grayish-blue);
+  text-align: start;
+  max-width: 50rem;
+  line-height: 1.4;
+  padding-left: 5rem;
+}
+
+.page3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 6rem;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 17rem;
+  padding-top: 5rem;
+}
+
+.tittle {
+  font-size: 2.4rem;
+  color: var(--dark-blue);
+}
+
+.comment-section {
+  width: 140%; /* Genişliği 100% olarak ayarlayarak taşıma sorununu düzeltebiliriz */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: transform 0.5s ease;
+}
+
+.comment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 50rem;
+  background-color: var(--dark-grayish-blue);
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.comment-image {
+  max-width: 10rem;
+  width: 100%;
+  margin-top: -3rem;
+}
+
+.name {
+  font-size: 1.6rem;
+}
+
+.comm {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--very-light-gray);
+  line-height: 1.4;
+}
+
+.page4-container {
+  background-color: var(--bright-red);
+  padding-bottom: 8rem;
+  padding-top: 3rem;
+}
+
+.page4 {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  justify-content: space-between;
+}
+
+.page-4-ttle {
+  font-size: 1.5rem;
+  max-width: 50rem;
+  color: var(--very-light-gray);
+}
+
+.btn4 {
+  color: var(--bright-red);
+  background-color: var(--very-light-gray);
+}
+
+.footer-container {
+  background-color: var(--very-dark-blue);
+  width: 100%;
+  padding: 6rem 0 5rem 0;
+}
+
+.footerr {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  filter: invert(1);
+}
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.social-medias {
+  display: flex;
+  gap: 1rem;
+}
+
+.second-container {
+  display: flex;
+  gap: 20rem;
+}
+
+.l {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.l:first-child {
+  margin-top: 0;
+}
+
+.inside-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-inp {
+  padding: 1rem;
+  border-radius: 3rem;
+  border: none;
+}
+
+.btn31 {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background-color: var(--bright-red);
+  border: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 4rem;
+  }
+
+  .navlist_container {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 25rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    background-color: white;
+    max-width: 50rem;
+    height: 30rem;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 4rem;
+    display: none;
+  }
+
+  .ll:first-child {
+    margin-left: 2rem;
+  }
+
+  .btn-container {
+    display: none;
+  }
+
+  .active {
+    display: block !important;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 700;
+  }
+
+  .overlay {
+    position: fixed; /* Overlay'i sayfanın tamamına konumlandırıyoruz */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradyan arka plan: Üstte yarı saydam ve aşağıya doğru daha koyulaşan gölge */
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+    display: none;
+    z-index: 200; /* Üstte görünecek şekilde bir z-index değeri */
+  }
+
+  /* Overlay içeriği stilini belirliyoruz */
+  .overlay-content {
+    position: absolute;
+    top: 50%; /* Ekranın ortasında */
+    left: 50%; /* Ekranın ortasında */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* İçeriği ortalamak için translate kullanıyoruz */
+    color: white; /* Beyaz metin */
+    text-align: center;
+  }
+  .drop-down {
+    z-index: 300;
+  }
+
+  .footerr {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .second-container {
+    gap: 8rem;
+  }
+
+  .first-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .social-medias > img {
+    width: 3rem;
+    margin-left: 2rem;
+  }
+
+  .page1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .right-section {
+    align-self: center;
+  }
+
+  .left-section {
+    align-items: center;
+  }
+
+  .left-section > p,
+  h1 {
+    text-align: center !important;
+  }
+
+  .page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-section2 {
+    align-self: center;
+  }
+
+  .btn-container1 {
+    display: block;
+  }
+
+  .page4 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .ttle::before {
+    left: -2px;
+  }
+
+  .ttle2::before {
+    left: -2px;
+  }
+
+  .ttle3::before {
+    left: -2px;
+  }
+
+  .comment-section {
+    width: 300%;
+  }
+
+  .btn-container2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .drop-down {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.ll > a {
+  color: var(--dark-blue);
+  font-size: 1.6rem;
+}
